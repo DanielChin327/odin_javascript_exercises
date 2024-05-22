@@ -1,14 +1,13 @@
-const removeFromArray = function(array, ...args) {
+const  removeFromArray = (arr, ...num) => {
   let result = [];
 
-  array.forEach((num) => {
-    if (!args.includes(num)) {
-      result.push(num);
-    }
-  });
+arr.forEach((item) => {
+  if (!num.includes(item)) {
+    result.push(item)
+  }
+})
 
   return result;
 };
-
 // Do not edit below this line
 module.exports = removeFromArray;
