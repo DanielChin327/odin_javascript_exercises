@@ -1,11 +1,12 @@
 const  removeFromArray = (arr, ...num) => {
   let result = [];
 
-arr.forEach((item) => {
-  if (!num.includes(item)) {
-    result.push(item)
-  }
-})
+  arr.forEach((item) => {
+    if (!num.includes(item)) {
+      result.push(item)
+    }
+  })
+
 
   return result;
 };
