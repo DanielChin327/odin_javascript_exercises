@@ -10,8 +10,13 @@ const sum = function(array1) {
   return array1.reduce((total, current) => total + current, 0);
 };
 
+// How to use .reduce
+// total = accumulated value previously returned in last invocation
+// current = the current element being processed
+// 0 = the initial value
+
 const multiply = function(array1) {
-  return array1.reduce((total, current) => total * current, 0)
+  return array1.reduce((total, current) => total * current, 1)
 };
 
 const power = function(num1, num2) {
